@@ -4,14 +4,29 @@
   <meta charset="utf-8">
   <title>Hello painite.world</title>
   <style>
-   .fig {
-     display:flex;
-  align-items: center;
-  justify-content: center;
-   }
+body {
+    margin: 0;
+}
+.img-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-wrapper img {
+    position: absolute;
+    top: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
   </style>
  </head>
  <body>
-<p class="fig"><img src="painiteworld.jpg" alt=""></p>
+<div class="img-wrapper"><img src="painiteworld.jpg" alt=""></div>
  </body>
 </html>
